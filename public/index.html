@@ -16,32 +16,37 @@
         <div class="row">
 
             <div class="container corp">
-                <h3>О компании</h3>
                 <div class="row">
                     <div class="col-lg-6 text">
+                        <h3>О компании</h3>
                         <p>RPK «Rostpolikraft» производит полимерпесчаное оборудование для переработки вторичных полимеров, отходов, мусора. Предлагаемое оборудование обладает высокой производительностью и надежностью, превосходя существующие аналоги.</p>
                         <p>Продукция, изготовленная на нашем оборудовании, находит широкое применение в строительстве и благоустройстве. Десятки укомплектованных и запущенных производственных линий в различных регионах России и СНГ делают RPK «Rostpolikraft» надежным партнером и поставщиком полимерпесчаного оборудования. Наше оборудование помогает решать проблемы экологического масштаба связанные с загрязнением пластиковыми отходами окружающей среды.</p>
                     </div>
                     <div class="col-lg-6">
-                        <iframe width="100%"  src="https://www.youtube.com/embed/XBWjsJa5Zgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <a href="https://www.youtube.com/embed/XBWjsJa5Zgc" target="_blank" onClick="window.open(this.href, '', 'width='+screen.availWidth/2+',height='+screen.availHeight/2+',top='+screen.availHeight/4+',left='+screen.availWidth/4); return false;">
+
+                            <img src="//img.youtube.com/vi/XBWjsJa5Zgc/sddefault.jpg" width="640" height="450">
+
+                        </a>
+                        <!--<iframe width="100%"  src="https://www.youtube.com/embed/XBWjsJa5Zgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg advantages mt-5 mr-3 p-3">
                         <img src="assets/design/images/20.png">
-                        <p class="pt-3">текст/преимуществаrgdgdgdfgagdgfdgggggggggg<br>в две строки</p>
+                        <p class="pt-3">текст преимущества<br>в две строки</p>
                     </div>
                     <div class="col-lg advantages mt-5 mr-3 p-3">
                         <img src="assets/design/images/21.png">
-                        <p class="pt-3">текст/преимущества<br>в две строки</p>
+                        <p class="pt-3">текст преимущества<br>в две строки</p>
                     </div>
                     <div class="col-lg advantages mt-5 mr-3 p-3">
                         <img src="assets/design/images/22.png">
-                        <p class="pt-3">текст/преимущества<br>в две строки</p>
+                        <p class="pt-3">текст преимущества<br>в две строки</p>
                     </div>
                     <div class="col-lg advantages mt-5 mr-3 p-3">
                         <img src="assets/design/images/23.png">
-                        <p class="pt-3">текст/преимущества<br>в две строки</p>
+                        <p class="pt-3">текст преимущества<br>в две строки</p>
                     </div>
                     <div class="col-lg advantages mt-5 mr-3 p-3">
                         <img src="assets/design/images/24.png">
@@ -53,6 +58,76 @@
         </div>
         <!--О компании-->
 
+        <!--Форма-->
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3>Заказать оборудование</h3>
+                        <form method="post" class="ajax_form" action="" id="form-call">
+                            <input type="hidden" name="token" value="03AOLTBLSjSHx0_c5CqF-0YfjOON3Ia-Rd2vsAKv5WSZP5LvdXu_A6w9pRrOgF7dFZNLAWqmJSStUvl9Sxi8CYPQ1I048QoHZRUTsfAoyAjSeW8THdwFyuEQ9J-9bam0EmsIbEo3OGiMXueoybrxYfAmTFqpZy3QjNZvcdJYmQX4h9mPkh-3nhVP0Abqapy3bDWUdUgMuTOgcCU0YYOf-nOO6QHR4BR7QLTiI0PQINqp07aqsyxDtyW3r-eX4OVMCbRDJ9LQpcvAmNwBkCE8fwouyek8DA3Q4TDJ2WNR4fnSgflMeGz9oD1buATS30Xp-C52OLNz-Qy4SZlKSrvtscZKIAIOG3o_eaOXljl-xCy94K6_RWZqvwZrzztWiJAfQZRUdfFEUD8FuLm-OI9tjzcNvLn_wG56VRxtSVsCGoXwKpHirirzwxWpW_oAtlPyzYCzKfo3hfueanf4uDtKZh44M8E3JwnUo2RvAn90zvQZk32nMNb_TNsk3ODm4x8BZTMSUlsWj9MmBblXhj6vbbtnMqUFthyeJeWg">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="ваше имя *">
+                                <span class="error error_name"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" class="form-control" placeholder="ваш номер телефона *" maxlength="18">
+                                <span class="error error_phone"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="mail" class="form-control" placeholder="ваш Email *">
+                                <span class="error error_mail"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="city" class="form-control" placeholder="ваш город *">
+                                <span class="error error_city"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="comment" class="form-control" rows="1" placeholder="Комментарий"></textarea>
+                                <span class="error error_comment"></span>
+                            </div>
+                            <div class="form-group">
+                                <div class="row no-gutters">
+                                    <div class="col-auto pr-3">
+                                        <input type="hidden" name="agreement" value="">
+                                        <input type="checkbox" name="agreement" id="diller-agreement" class="checkbox mt-1" value="yes">
+                                    </div>
+                                    <div class="col">
+                                        <label for="diller-agreement">
+                                            Я даю свое согласие на обработку <a target="blank" href="/assets/images/sliders/1.png">персональных данных</a>
+                                        </label>
+                                    </div>
+                                    <span class="error error_agreement"></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row mx-0 mx-lg-3">
+                                    <div class="col-lg col-7 px-0 pr-1 px-lg-3">
+                                        <input type="button" class="btn open-phone order-btn py-3 btn-block" value="Заказать по телефону">
+                                        <div class="d-none">
+                                            8 898 899 22 47
+                                        </div>
+                                    </div>
+                                    <div class="col-lg col-5 px-0 pl-1 px-lg-3">
+                                        <input type="submit" name="order" class="btn btn-success py-3 btn-block" value="Заказать">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg img-site">
+                        <div class="img-site-rel">
+                            <img src="assets/design/images/38.png">
+                        </div>
+                        <div class="img-site-abs">
+                            <h3>Перейти на <br>основной сайт</h3>
+                            <input type="submit" name="go_over" class="btn go_over py-3 px-5" value="Перейти" onClick="window.location='http://localhost:63342/www/public/index.html?_ijt=8cqdmkfsigu1841o5m0gt7op3c'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Форма-->
 
     </div>
     <footer class="container-fluid">
