@@ -13,15 +13,27 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader"
-                }
-            },
+            // {
+            //     test: /\.js$/,
+            //     exclude: /node_modules/,
+            //     use: {
+            //         loader: "babel-loader",
+            //         options: {
+            //             presets: ['@babel/preset-env']
+            //         }
+            //     }
+            // },
             {
                 test: /\.s[ac]ss$/i,
+                use: [
+                    // fallback to style-loader in development
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
+            {
+                test: /\.css$/i,
                 use: [
                     // fallback to style-loader in development
                     MiniCssExtractPlugin.loader,

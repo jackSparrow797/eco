@@ -1,4 +1,7 @@
-.corp{
+.corp {
+  padding-top: $f100px;
+  padding-bottom: $f100px;
+
   .text {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -7,20 +10,24 @@
     line-height: $f22px;
     color: $cDark;
   }
+
   iframe {
     height: 411px;
   }
 }
-.advantages{
+
+.advantages {
   border: 1px solid #C5C5C5;
-  height: 159px;
-  width: 241px;
   text-align: center;
 }
+
 @include media-breakpoint-down(lg) {
-  .corp{
-    .text{
+  .corp {
+    .text {
       font-size: $f14px;
+    }
+    iframe {
+      height: 200px;
     }
   }
 }
