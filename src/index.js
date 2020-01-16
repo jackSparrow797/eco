@@ -13,3 +13,4 @@ import '@fancyapps/fancybox'
 import './js/sliders';
 import './js/menu';
 import './js/capcha';
+import './js/form';
