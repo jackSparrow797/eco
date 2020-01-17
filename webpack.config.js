@@ -13,16 +13,38 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.js$/,
-            //     exclude: /node_modules/,
-            //     use: {
-            //         loader: "babel-loader",
-            //         options: {
-            //             presets: ['@babel/preset-env']
-            //         }
-            //     }
-            // },
+
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    'file-loader?name=[path][name].[ext]&outputPath=new-images',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            },
+                            // optipng.enabled: false will disable optipng
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: [0.65, 0.90],
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
+                            }
+                        }
+                    },
+                ],
+            },
             {
                 test: /\.s[ac]ss$/i,
                 use: [

@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $(document).on('click', ".open-phone", function (e) {
         e.preventDefault();
-        alert('sdfdsf');
-        $(this).addClass('d-none');
-        $(this).next().removeClass('d-none');
+        let button = $(this);
+        button.next().removeClass('d-none');
+        button.remove();
     });
 });

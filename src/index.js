@@ -3,7 +3,7 @@ import './scss/app.scss';
 
 import $ from 'jquery';
 
-
+// const IMG = require.context('./images/', true, /\.png/)
 global.jQuery = $;
 global.$ = $;
 import 'slick-carousel/slick/slick.min'
