@@ -39,7 +39,8 @@ $(document).ready(function () {
         },{
             breakpoint: 760,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                dots: true
             }
         },
         ]

@@ -53,13 +53,19 @@ h3 {
 .content-body {
   flex: 1 0 auto;
 }
+.position-relative {
+  position: relative;
+}
 
 footer {
   flex: 0 0 auto;
 }
 
-header {
+.bg-dark{
   background: $bg;
+}
+
+header, footer {
   padding-top: $f12px;
   padding-bottom: $f12px;
   color: $white;
