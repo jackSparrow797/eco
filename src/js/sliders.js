@@ -45,4 +45,22 @@ $(document).ready(function () {
         },
         ]
     });
+
+    $(".video-slider, .photo-slider").slick({
+        arrows: false,
+        infinite: false,
+        slidesToShow: 3,
+        responsive: [{
+            breakpoint: 1130,
+            settings: {
+                slidesToShow: 2,
+            }
+        },{
+            breakpoint: 760,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+        ]
+    });
 });

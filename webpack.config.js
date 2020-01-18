@@ -9,6 +9,8 @@ module.exports = {
     watch: true,
     output: {
         filename: "bundle.js",
+        publicPath: '/assets/design/',
+        chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname + '/public/assets', 'design')
     },
     module: {
