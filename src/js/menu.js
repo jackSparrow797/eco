@@ -61,4 +61,10 @@ $(document).ready(function () {
 });
 
 const Blazy = require('blazy');
-var bLazy = new Blazy();
+var bLazy = new Blazy({
+    breakpoints: [
+        {
+            width: 992 // max-width
+            , src: 'data-src-medium'
+        }]
+});

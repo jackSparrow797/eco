@@ -17,7 +17,7 @@ import './js/menu';
 import './js/capcha';
 import './js/form';
 
-// const IMG = require.context('./images/', true, /\.png/)
+// const IMG = require.context('./images/', true, /\.png/
 // async function getComponent() {
 //
 //     const element = document.createElement('div');

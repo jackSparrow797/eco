@@ -80,6 +80,7 @@ header, footer {
     font-size: $f16px;
     line-height: $f19px;
     text-decoration-line: underline;
+    color: $white;
   }
 
   .green-link {
@@ -105,13 +106,14 @@ header, footer {
 .to_up {
   z-index: 11000000;
   right: 5%;
-  width: 45px;
   display: none;
   bottom: 50px;
   position: fixed;
   -webkit-transition: opacity .5s;
   -moz-transition: opacity .5s;
   transition: opacity .5s;
+  background: $bg;
+  border-radius: 100%;
 }
 
 .button-left {
@@ -151,8 +153,29 @@ header, footer {
   color: $white!important;
 }
 
-@media (max-width: 1430px) {
+.b-lazy {
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0;
 }
+.b-lazy.b-loaded {
+  opacity: 1;
+  max-width: 100%;
+}
+
+.image-wrapper {
+  // Adding a loader and background color. The user will see it
+  // if the image is loading slow.
+  background: url('/assets/design/images/loading.gif') center center no-repeat;
+  width: 100%
+}
+
+.b-lazy {
+}
+
 
 @include media-breakpoint-down(xl) {
   html {font-size: 14px;}
