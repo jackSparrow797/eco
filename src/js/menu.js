@@ -17,7 +17,7 @@ $(document).ready(function () {
         $(target).addClass("active");
         $(this).parent().addClass('active');
         let sliderClass = $(this).attr('data-slider');
-        $("." + sliderClass).slick('reinit');
+        $("." + sliderClass).slick('refresh');
     });
 
     $(".to_up").click(function () {

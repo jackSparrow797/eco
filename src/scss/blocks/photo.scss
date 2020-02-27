@@ -44,6 +44,21 @@
   }
 }
 
+.video-slider {
+  .slick-arrow {
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+
+    &.next {
+      right: -20px;
+    }
+    &.prev {
+      left: -20px;
+    }
+  }
+}
+
 @include media-breakpoint-down(lg) {
   .row-photo .photo-tabs ul li a {
     font-size: $f28px;

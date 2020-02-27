@@ -12,7 +12,7 @@ $(document).ready(function () {
         slidesToShow: 2,
         appendArrows: '.direction-arrows',
         nextArrow: '<a href="#" class="ml-3"><img src="/assets/design/images/right.png"/></a>',
-        prevArrow: '<a href="#" class="mr-3"><img src="/assets/design/images/left.png"/></a>',
+        prevArrow: '<a href="#" class="mr-3 "><img src="/assets/design/images/left.png"/></a>',
         responsive: [{
 
             breakpoint: 1130,
@@ -47,8 +47,10 @@ $(document).ready(function () {
     });
 
     $(".video-slider, .photo-slider").slick({
-        arrows: false,
+        arrows: true,
         infinite: false,
+        nextArrow: '<a href="#" class="ml-3 next"><img src="/assets/design/images/right.png"/></a>',
+        prevArrow: '<a href="#" class="mr-3 prev"><img src="/assets/design/images/left.png"/></a>',
         slidesToShow: 3,
         responsive: [{
             breakpoint: 1130,
@@ -59,6 +61,8 @@ $(document).ready(function () {
             breakpoint: 760,
             settings: {
                 slidesToShow: 1,
+                arrows: false,
+                dots: true
             }
         },
         ]
